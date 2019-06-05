@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: beige;
 }
 ol, ul {
 	list-style: none;
@@ -55,40 +56,56 @@ table {
 
 html, body {
 	height: 100%;
+	width: 840px;
 	
 }
+
+
 
 @borderblack:1px solid black;
 @borderblue:1px solid blue;
 @borderred:1px solid red;
 @bordergreen:1px solid green;
 @minimargin:5px;
+@h1size:1.8rem;
+@h3size:1.2rem;
+@pstandard:0.9rem;
 
+.displayadjust(){
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 
 header{
-	border: @borderblack;
+	//border: @borderblack;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	
+	margin: @minimargin;
 	
 	nav{
-		border: @borderblue;
-		width: 18rem;
+		//border: @borderblue;
+		width: 37rem;
 		height: 2.5rem;
 		margin: @minimargin;
-		padding-left: 3rem;
-		margin-left: 9rem;
+		//margin-left: 9rem;
+		display:flex;
+		justify-content: space-around;
+
+		a{
+			margin: @minimargin;
+		}
 	}
 	img{
 		width: 206px;
 		height: 267px;
-		border: @bordergreen;
+		//border: @bordergreen;
 		margin: @minimargin;
-		margin-bottom: -6.4rem;
+		margin-bottom: -6.3rem;
 	}
 	.intro{
-		border: @borderred;
+		//border: @borderred;
 		width: 38.5rem;
 		height: 6rem;
 		margin: @minimargin;
@@ -98,5 +115,72 @@ header{
 			text-align: center;
 			margin-bottom: 0.3rem;
 		}
+		p{
+			font-size: @pstandard;
+		}
+	}
+}
+
+.skills{
+	margin: @minimargin;
+	margin-top:1.5rem;
+	//border: @borderblack;
+	.displayadjust();
+	padding: @minimargin;
+	.skillpoint{
+		margin:10px;
+		p{
+			font-size: @pstandard;
+		}
+	}
+	h1{
+		
+		font-size: @h1size;
+	}
+	h3{
+		text-align: center;
+		font-size:@h3size;
+		
+	}
+	p{
+		font-size: @pstandard;
+	}
+}
+.workhistory{
+	margin:@minimargin;
+	margin-top:1.5rem;
+	//border: @borderblack;
+	.displayadjust();
+	padding: @minimargin;
+	h1{
+		font-size: @h1size;
+	}
+	.job{
+		h3{
+			text-align: center;
+			font-size: @h3size;
+		}
+		p{
+			font-size: @pstandard;
+			text-align: center;
+		}
+	}
+
+}
+footer{
+	//border: @borderblack;
+	margin: @minimargin;
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	div{
+		padding: @minimargin;
+	}
+	h1{
+		font-size: @h1size;
+	}
+	p{
+		font-size: @pstandard;
 	}
 }

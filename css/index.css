@@ -106,6 +106,7 @@ section {
 }
 body {
   line-height: 1;
+  background-color: beige;
 }
 ol,
 ul {
@@ -133,30 +134,31 @@ table {
 html,
 body {
   height: 100%;
+  width: 840px;
 }
 header {
-  border: 1px solid black;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin: 5px;
 }
 header nav {
-  border: 1px solid blue;
-  width: 18rem;
+  width: 37rem;
   height: 2.5rem;
   margin: 5px;
-  padding-left: 3rem;
-  margin-left: 9rem;
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  margin: 5px;
 }
 header img {
   width: 206px;
   height: 267px;
-  border: 1px solid green;
   margin: 5px;
-  margin-bottom: -6.4rem;
+  margin-bottom: -6.3rem;
 }
 header .intro {
-  border: 1px solid red;
   width: 38.5rem;
   height: 6rem;
   margin: 5px;
@@ -165,4 +167,66 @@ header .intro h2 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 0.3rem;
+}
+header .intro p {
+  font-size: 0.9rem;
+}
+.skills {
+  margin: 5px;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+.skills .skillpoint {
+  margin: 10px;
+}
+.skills .skillpoint p {
+  font-size: 0.9rem;
+}
+.skills h1 {
+  font-size: 1.8rem;
+}
+.skills h3 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.skills p {
+  font-size: 0.9rem;
+}
+.workhistory {
+  margin: 5px;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+.workhistory h1 {
+  font-size: 1.8rem;
+}
+.workhistory .job h3 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.workhistory .job p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+footer {
+  margin: 5px;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer div {
+  padding: 5px;
+}
+footer h1 {
+  font-size: 1.8rem;
+}
+footer p {
+  font-size: 0.9rem;
 }
