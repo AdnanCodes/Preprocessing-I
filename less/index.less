@@ -58,3 +58,45 @@ html, body {
 	
 }
 
+@borderblack:1px solid black;
+@borderblue:1px solid blue;
+@borderred:1px solid red;
+@bordergreen:1px solid green;
+@minimargin:5px;
+
+
+header{
+	border: @borderblack;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	
+	
+	nav{
+		border: @borderblue;
+		width: 18rem;
+		height: 2.5rem;
+		margin: @minimargin;
+		padding-left: 3rem;
+		margin-left: 9rem;
+	}
+	img{
+		width: 206px;
+		height: 267px;
+		border: @bordergreen;
+		margin: @minimargin;
+		margin-bottom: -6.4rem;
+	}
+	.intro{
+		border: @borderred;
+		width: 38.5rem;
+		height: 6rem;
+		margin: @minimargin;
+		
+		h2{
+			font-size: 3rem;
+			text-align: center;
+			margin-bottom: 0.3rem;
+		}
+	}
+}
