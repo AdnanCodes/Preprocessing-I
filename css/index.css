@@ -107,6 +107,8 @@ section {
 body {
   line-height: 1;
   background-color: beige;
+  display: flex;
+  flex-direction: column;
 }
 ol,
 ul {
@@ -134,7 +136,6 @@ table {
 html,
 body {
   height: 100%;
-  width: 840px;
 }
 header {
   display: flex;
