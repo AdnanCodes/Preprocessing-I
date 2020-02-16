@@ -1,1 +1,233 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 5px;
+}
+header nav {
+  width: 37rem;
+  height: 2.5rem;
+  margin: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  margin: 5px;
+}
+header img {
+  width: 206px;
+  height: 267px;
+  margin: 5px;
+  margin-bottom: -6.3rem;
+}
+header .intro {
+  width: 38.5rem;
+  height: 6rem;
+  margin: 5px;
+}
+header .intro h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+header .intro p {
+  font-size: 0.9rem;
+}
+.skills {
+  margin: 5px;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+.skills .skillpoint {
+  margin: 10px;
+}
+.skills .skillpoint p {
+  font-size: 0.9rem;
+}
+.skills h1 {
+  font-size: 1.8rem;
+}
+.skills h3 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.skills p {
+  font-size: 0.9rem;
+}
+.workhistory {
+  margin: 5px;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+.workhistory h1 {
+  font-size: 1.8rem;
+}
+.workhistory .job h3 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.workhistory .job p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+footer {
+  margin: 5px;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer div {
+  padding: 5px;
+}
+footer h1 {
+  font-size: 1.8rem;
+}
+footer p {
+  font-size: 0.9rem;
+}
